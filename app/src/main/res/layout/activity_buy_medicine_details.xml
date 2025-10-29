@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_box"
+    tools:context=".BuyMedicineDetailsActivity">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/buy_med1"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/textViewBMD"
+    android:layout_marginTop="16dp"/>
+
+    <!-- Medicine Description Title -->
+    <TextView
+        android:id="@+id/textViewBMD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Medicine Description"
+        android:textColor="#000000"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <!-- Deliver Location -->
+    <TextView
+        android:id="@+id/textViewBMDLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver Location : Dhaka"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMD"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <!-- Buy Medicines Title -->
+    <TextView
+        android:id="@+id/textViewBMDtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Medicines"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDLoc"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <!-- Multiline EditText for Package Details -->
+    <EditText
+        android:id="@+id/editTextmultilineBMD"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/med_bar"
+        android:drawablePadding="20dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:hint="Package Details here"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBMDLoc"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/ButtonBMDBack"
+        android:layout_width="292dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back_btn"
+        android:text="BACK"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/ButtonBMDGotoCart"
+        android:layout_width="292dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/btngotocart"
+        android:text="ADD TO CART"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Total Cost Text -->
+    <TextView
+        android:id="@+id/textViewBMDTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

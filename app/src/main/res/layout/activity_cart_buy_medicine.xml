@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_box"
+    tools:context=".CartBuyMedicineActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/buy_med1"
+        android:contentDescription="App Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Delivery Location TextView -->
+    <TextView
+        android:id="@+id/textViewCartLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver Location: Dhaka"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <!-- Buy Medicine Title TextView -->
+    <TextView
+        android:id="@+id/textViewBMCartLabtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Medicine"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartLoc" />
+
+    <!-- ScrollView for Cart Details -->
+    <ScrollView
+        android:id="@+id/scrollViewCartDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMCartLabtitle"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBMtotalcostCart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ListView for Cart Items -->
+            <ListView
+                android:id="@+id/listViewBMcart"
+                android:layout_width="380dp"
+                android:layout_height="397dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/med_bar"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:clickable="true"
+                android:longClickable="true" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Total Cost TextView -->
+    <TextView
+        android:id="@+id/textViewBMtotalcostCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cost : 1200/-"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView4" />
+
+    <!-- Select Delivery Date TextView -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Delivery Date"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBMCartDate" />
+
+    <!-- Date Button -->
+    <Button
+        android:id="@+id/buttonBMCartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18/04/23"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContainer" />
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Checkout Button -->
+        <Button
+            android:id="@+id/ButtonBMCartCheckOutCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CHECK OUT"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="#b6833e"
+            android:layout_margin="8dp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/ButtonBMCarTBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BACK"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="#379956"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

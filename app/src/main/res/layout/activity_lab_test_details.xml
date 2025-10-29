@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_background"
+    tools:context=".LabTestDetailsActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewLTD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lab Test Details"
+        android:textColor="#000000"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="196dp"
+        android:layout_height="105dp"
+        android:contentDescription="Lab Test Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewLTD"
+        app:srcCompat="@drawable/ct" />
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/textViewLTDLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver Location : Dhaka"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Test and Packages Title -->
+    <TextView
+        android:id="@+id/textViewLTDtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Test and Packages"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textViewLTDLoc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Multiline Text Input -->
+    <EditText
+        android:id="@+id/editTextmultilineLTD"
+        android:layout_width="310dp"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/o"
+        android:gravity="center"
+        android:hint="Package Details here"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewLTDtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Total Cost -->
+    <TextView
+        android:id="@+id/textViewTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cost: tk0.00"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextmultilineLTD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/ButtonLTDGotoCart"
+        android:layout_width="292dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_btn"
+        android:text="ADD TO CART"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textViewTotalCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/ButtonLTDBack"
+        android:layout_width="292dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_btn"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ButtonLTDGotoCart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

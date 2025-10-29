@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_med"
+    tools:context=".HealthArticleActivity">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_med"
+            android:orientation="vertical">
+
+            <!-- Logo Image -->
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="191dp"
+                android:layout_height="146dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/article" />
+
+            <!-- Details Bar: Search Box -->
+            <!-- Title TextView -->
+
+            <!-- Health Article TextView -->
+            <TextView
+                android:id="@+id/textViewHAtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Empower your health journey with knowledge"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logoImageView" />
+
+            <!-- List of Medicines -->
+            <LinearLayout
+                android:id="@+id/listContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/round_med">
+
+                <!-- Example Items -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=" Avaiable Article's"
+                    android:textSize="30sp"
+                    android:textColor="@color/white" />
+
+                <!-- More items dynamically added in Java -->
+            </LinearLayout>
+
+            <!-- Buttons Container -->
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+
+                android:layout_gravity="center">
+
+                <!-- Back Button -->
+                <Button
+                    android:id="@+id/ButtonHABack"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="#379956"
+                    android:text="BACK"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
