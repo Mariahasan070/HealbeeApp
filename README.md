@@ -30,7 +30,7 @@ Healbee is an Android application designed to streamline healthcare services, of
 
 ## 📄 Screenshots  
 ### 🏠 Home Screen
-![Home Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-1.png)
+![Home Screen](healbee_images/img-1.jpg)
 ![Dashboard Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-2.png)
 ![Search_Doctore Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-3.png)
 ![Search_dr Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-4.png)
