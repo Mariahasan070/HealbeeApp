@@ -29,16 +29,25 @@ Healbee is an Android application designed to streamline healthcare services, of
 4. Run the app on emulator or device.
 
 ## 📄 Screenshots  
-### 🏠 Home Screen
-![Home Screen](healbee_images/img-1.jpg)
-![Dashboard Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-2.png)
-![Search_Doctore Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-3.png)
-![Search_dr Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-4.png)
-![Book_Appointment Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-5.png)
-![Search_medicine Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-6.png)
-![add_cart Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-7.png)
-![search_web Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-8.png)
-![my_dash Screen](https://raw.githubusercontent.com/Mariahasan070/HealbeeApp/main/healbee_images/img-9.png)
+
+<p align="center">
+  <img src="healbee_images/img-1.jpg" alt="Home Screen" width="250"/>
+  <img src="healbee_images/img-2.jpg" alt="Dashboard Screen" width="250"/>
+  <img src="healbee_images/img-3.jpg" alt="Search Doctor Screen" width="250"/>
+</p>
+
+<p align="center">
+  <img src="healbee_images/img-4.jpg" alt="Doctor List Screen" width="250"/>
+  <img src="healbee_images/img-5.jpg" alt="Book Appointment Screen" width="250"/>
+  <img src="healbee_images/img-6.jpg" alt="Search Medicine Screen" width="250"/>
+</p>
+
+<p align="center">
+  <img src="healbee_images/img-7.jpg" alt="Add to Cart Screen" width="250"/>
+  <img src="healbee_images/img-8.jpg" alt="Search Web Screen" width="250"/>
+  <img src="healbee_images/img-9.jpg" alt="My Dashboard Screen" width="250"/>
+</p>
+
 
 ## 🎯 Goal & Impact  
 - Improve accessibility and efficiency of healthcare services.  
